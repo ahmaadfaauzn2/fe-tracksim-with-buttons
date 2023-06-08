@@ -1,0 +1,25 @@
+.table {
+    width: 98%;
+    margin: 12px 2% 0 2%;
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(247, 247, 247);
+}
+
+.title {
+    margin:0.1% 0 0.5% 2%;
+    color: aliceblue;
+}
+
+.btn {
+    margin:0.1% 0 0.5% 2%;
+    margin-top: 10px;
+}
+
+.info {
+    color: aliceblue;
+    font-size: large;
+    
+}
+

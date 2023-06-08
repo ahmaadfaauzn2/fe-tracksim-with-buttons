@@ -1,0 +1,188 @@
+/* Configurationstyle.css */
+
+.configuration-button {
+  position: absolute;
+  blockSize: 19px; 
+  top: -5.2px;
+  left: 1530px;
+  margin: 10px;
+  background-color: #eff2f5;
+
+  cursor: pointer;
+  
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 80%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  
+}
+
+.close-button {
+  margin-top: 15px;
+  background: #000033;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  position: relative;
+  right: -510px;
+  bottom: -20px;
+  padding: 6px 15px 10px 15px;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  /* move font position to left */
+  position: relative;
+  left: -10px;
+  top: -35px;
+  margin-top: 0;
+  color: white;
+  z-index: 1;
+}
+
+.modal-title-2 {
+  position: relative;
+  top: -350px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 20px;
+  color: #070707;
+}
+
+.rectangle-header {
+  position:relative;
+  top: -340px;
+
+  width: 110%;
+  left: -30px;
+  height: 50px;
+  background-color: #000033;
+  margin-bottom: 10px;
+}
+
+.rectangle-header-2 {
+  position:relative;
+  top: -307px;
+  width: 50%;
+  height: 1px;
+  background-color: #000033;
+  margin-bottom: 20px;
+}
+
+.configure-table-container {
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+  position: relative;
+  bottom: -60px;
+  
+}
+
+.configuration-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  
+}
+
+.configuration-table th,
+.configuration-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.configuration-table th {
+  background-color: #597fbd;
+  
+  color: #fff;
+}
+
+.Add-Radar,
+.Delete-Radar,
+.Add-AIS,
+.Delete-AIS,
+.Add-ADSB,
+.Delete-ADSB {
+  position:relative;
+  bottom: -31px;
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Add-Radar {
+
+  background-color: #3fcb68;
+  color: #fff;
+}
+
+.Delete-Radar {
+  position:relative;
+  
+  top: 24px;
+  left: 8px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.Add-AIS {
+  position: relative;
+  top: 31px;
+  
+  left: 80px;
+  background-color: #3fcb68;
+  color: #fff;
+}
+
+.Delete-AIS {
+  position: relative;
+  top: 31px;
+  
+  left: 85px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.Add-ADSB {
+  position: relative;
+  top: 31px;
+  
+  left: 110px;
+  background-color: #3fcb68;
+  color: #fff;
+}
+
+.Delete-ADSB {
+  position: relative;
+  top: 24px;
+  
+  left: 114px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
