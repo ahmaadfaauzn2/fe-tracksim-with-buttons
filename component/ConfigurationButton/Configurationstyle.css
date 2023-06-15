@@ -29,9 +29,11 @@
   background-color: #fff;
   width: 80%;
   max-width: 600px;
-  padding: 30px;
+  padding: 80px;
+  height: 320px;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 80px;
   
 }
 
@@ -41,11 +43,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   color: #fff;
-  width: 100px;
-  height: 40px;
+  width: 80px;
+  height: 30px;
   position: relative;
-  right: -510px;
-  bottom: -20px;
+  right: -570px;
+  bottom: 60px;
   padding: 6px 15px 10px 15px;
   cursor: pointer;
 }
@@ -55,8 +57,8 @@
   font-weight: 700;
   /* move font position to left */
   position: relative;
-  left: -10px;
-  top: -35px;
+  left: -70px;
+  top: -100px;
   margin-top: 0;
   color: white;
   z-index: 1;
@@ -64,8 +66,9 @@
 
 .modal-title-2 {
   position: relative;
-  top: -350px;
-  font-size: 15px;
+  top: -420px;
+  left: -60px;
+  font-size: 14px;
   font-weight: 700;
   text-align: left;
   margin-top: 20px;
@@ -74,10 +77,9 @@
 
 .rectangle-header {
   position:relative;
-  top: -340px;
-
-  width: 110%;
-  left: -30px;
+  top: -400px;
+  width: 127%;
+  left: -81px;
   height: 50px;
   background-color: #000033;
   margin-bottom: 10px;
@@ -85,39 +87,60 @@
 
 .rectangle-header-2 {
   position:relative;
-  top: -307px;
-  width: 50%;
+  top: -380px;
+  left: -60px;
+  width: 20%;
   height: 1px;
   background-color: #000033;
   margin-bottom: 20px;
 }
 
 .configure-table-container {
-  width: 100%;
-  height: 200px;
-  overflow: auto;
-  position: relative;
-  bottom: -60px;
   
+  height: 200px;
+
+  font-size: 10px;
+  border-collapse: separate;
+  text-align: center;
+  /* Use 'separate' to create spacing between cells */
+  position: relative;
+  bottom: 50px;
+  left: -60px;
+  /* Add the following styles to position the scrollbar on the right side */
+  padding-right: 15px;
+  /* Adjust the padding as needed */
+  box-sizing: content-box;
+  width: calc(700px + 15px); /* Add the width of the scrollbar */
+  
+  /* Add this style to always display the scrollbar */
+  overflow: auto;
 }
 
-.configuration-table {
-  width: 100%;
-  border-collapse: collapse;
 
+.configuration-table {
+
+  border-collapse: collapse;
+    
+  border: 0.1px solid #ccc;
+  border-bottom: 10px;
   
 }
 
 .configuration-table th,
 .configuration-table td {
-  padding: 8px;
-  border: 1px solid #ccc;
+  padding: 7px;
+  height: 40px;
+  border: 0px solid #ccc;
+  
+  
 }
 
 .configuration-table th {
   background-color: #597fbd;
+  border-bottom: 10px;
   
-  color: #fff;
+  height: 20px;
+  
 }
 
 .Add-Radar,
@@ -127,10 +150,12 @@
 .Add-ADSB,
 .Delete-ADSB {
   position:relative;
-  bottom: -31px;
+  font-size: 11px;
+  bottom: 70px;
+  left: -60px;
   margin-top: 10px;
   width: 80px;
-  height: 40px;
+  height: 35px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -139,50 +164,461 @@
 
   background-color: #3fcb68;
   color: #fff;
+  box-shadow: 0px 4px 4px rgba(250, 255, 255, 0.25);
+  border-radius: 7px;
+  border: 1px #1A56DB;
+  color: #fff;
 }
 
 .Delete-Radar {
   position:relative;
-  
-  top: 24px;
-  left: 8px;
+  top: -70px;
+  left: -50px;
   background-color: #ff0000;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(250, 255, 255, 0.25);
+  border-radius: 7px;
+  border: 1px #1A56DB;
   color: #fff;
 }
 
 .Add-AIS {
   position: relative;
-  top: 31px;
-  
-  left: 80px;
+  top: -70px;
+
+  border: 1px #3fcb68;
+  color: #fff;
+  left: 50px;
   background-color: #3fcb68;
   color: #fff;
 }
 
 .Delete-AIS {
   position: relative;
-  top: 31px;
+  top: -70px;
   
-  left: 85px;
+  border: 1px #3fcb68;
+  color: #fff;
+  left: 58px;
   background-color: #ff0000;
   color: #fff;
 }
 
 .Add-ADSB {
   position: relative;
-  top: 31px;
-  
-  left: 110px;
+  top: -auto;
+  left: 130px;
   background-color: #3fcb68;
+  color: #fff;
+  
+  border: 1px #3fcb68;
   color: #fff;
 }
 
 .Delete-ADSB {
   position: relative;
-  top: 24px;
-  
-  left: 114px;
+  top: -70px;
+  border-radius: 7px;
+  border: 1px #3fcb68;
+  color: #fff;
+  left: 138px;
   background-color: #ff0000;
+  
   color: #fff;
 }
 
+.modal2nd {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-content-2nd {
+  background-color: #fff;
+  position: relative;
+  width: 95px;
+  height: 120px;
+  max-width: fit-content;
+  padding: 100px;
+  border-radius: 4px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.close-button-2nd {
+  background: #fff;
+  box-shadow: 0px 4px 4px rgb(243, 239, 239);
+  border-radius: 10px;
+  border: 1px solid #F55B5B;
+  color: #ff0000;
+  width: 80px;
+  height: 25px;
+  position: relative;
+  bottom: -180px;
+  right: 26px;
+  padding: 6px 15px 10px 15px;
+  cursor: pointer;
+}
+
+
+
+.update-button-2nd {
+
+  box-shadow: 0px 4px 4px rgba(250, 255, 255, 0.25);
+  border-radius: 7px;
+  border: 1px #1A56DB;
+  color: #fff;
+  width: 90px;
+  height: 25px;
+  position: relative;
+  bottom: -155px;
+  right: -72px;
+  padding: 6px 15px 10px 15px;
+  cursor: pointer;
+  background: #1A56DB;
+
+}
+
+.modal-title-updaterate {
+  position: relative;
+  font-size: 15px;
+  top: -160px;
+  left: -80px;
+}
+
+.modal-title-connection{
+  position: absolute;
+  font-size: 15px;
+  top: 55px;
+  left: 18px;
+}
+
+.rectangle-header-connection{
+  position:absolute;
+  top: 89px;
+  left: 20px;
+  width: 50%;
+  height: 1px;
+  background-color: #000033;
+  margin-bottom: 20px;
+}
+
+.rectange-header-updaterate{
+  position:absolute;
+  top: 22px;
+  left: 20px;
+  width: 50%;
+  height: 1px;
+  background-color: #000033;
+  margin-bottom: 20px;
+}
+
+.sensor-name-kafka{
+  padding: 1rem;
+  position: absolute;
+  top: 33px;
+  left: 20px;
+  width: 100px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.sensor-name-udp-multicast{
+  padding: 1rem;
+  position: absolute;
+  top: 33px;
+  left: 20px;
+  width: 100px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.sensor-name-udp{
+  padding: 1rem;
+  position: absolute;
+  top: 33px;
+  left: 20px;
+  width: 100px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.sensor-name-2nd-udp{
+  padding: 1rem;
+  position: absolute;
+  top: 97px;
+  left: 20px;
+  width: 100px;
+  height: 0px;
+  border: 1px solid #597FBD;
+
+}
+
+.sensor-name-2nd-udp-multicast{
+  padding: 1rem;
+  position: absolute;
+  top: 97px;
+  left: 20px;
+  width: 100px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.number-input-2nd-kafka{
+  position:absolute;
+  top: 33px;
+  left: 160px;
+  width: 55px;
+  height: 30px;
+  border: 1px solid #597FBD;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.number-input-2nd-udp-multicast{
+  position:absolute;
+  top: 33px;
+  left: 160px;
+  width: 55px;
+  height: 30px;
+  border: 1px solid #597FBD;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.number-input-2nd-udp{
+  position:absolute;
+  top: 33px;
+  left: 160px;
+  width: 55px;
+  height: 30px;
+  border: 1px solid #597FBD;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.sensor-name-2nd-kafka{
+  padding: 1rem;
+  position: absolute;
+  top: 97px;
+  left: 20px;
+  width: 100px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.select-input-2nd{
+  position:absolute;
+  top: 99px;
+  left: 160px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #597FBD;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.multicast-address-udp{
+  padding: 1rem;
+  position: relative;
+  top: -68px;
+  left: -10px;
+  width: 146px;
+  height: 0px;
+  border: 1px solid #597FBD;
+
+}
+.multicast-port-udp{
+
+  padding: 1rem;
+  position: relative;
+  top: -50px;
+  left: -10px;
+  width: 146px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.adress-kafka{
+  padding: 1rem;
+  position: relative;
+  top: -86px;
+  left: -20px;
+  width: 146px;
+  height: 0px;
+  border: 1px solid #597FBD;
+ 
+}
+
+.topic-kafka {
+  padding: 1rem;
+  position: absolute;
+  top: 193px;
+  left: 81px;
+  width: 145px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.port-kafka{
+  padding: 1rem;
+  position: absolute;
+  top: 240px;
+  left: 80px;
+  width: 146px;
+  height: 0px;
+  border: 1px solid #597FBD;
+
+}
+.modal-title-Address-kafka{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 15px;
+  position: relative;
+  top: -39px;
+  left: -82px;
+  width: 100px;
+  height: 0px;
+}
+
+.modal-title-Topic-kafka {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 15px;
+  position: relative;
+  top: -23px;
+  left: -82px;
+  width: 100px;
+  height: 0px;
+}
+
+.modal-title-Port-kafka{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 15px;
+  position: relative;
+  top: 38px;
+  left: -82px;
+  width: 100px;
+  height: 0px;
+
+}
+
+.modal-title-multicast-address {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 11px;
+  position: relative;
+  top: -42px;
+  left: -95px;
+  width: 100px;
+  height: 0px;
+}
+
+.multicast-address{
+  padding: 1rem;
+  position: relative;
+  top: -68px;
+  left: -10px;
+  width: 146px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.modal-title-multicast-group {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 11px;
+  position: relative;
+  top: -0px;
+  left: -94px;
+  width: 100px;
+  height: 0px;
+}
+
+.multicast-port {
+  padding: 1rem;
+  position: relative;
+  top: -50px;
+  left: -10px;
+  width: 146px;
+  height: 0px;
+  border: 1px solid #597FBD;
+}
+
+.modal3rd {
+  /* Styles for the modal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-overlay-3rd {
+  /* Styles for the modal overlay */
+}
+
+.modal-content-3rd {
+  /* Styles for the modal content */
+  background-color: #fff;
+  width: 15%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.connection-status {
+  /* Styles for the connection status heading */
+
+}
+
+.success-notification {
+  /* Styles for the success notification */
+  background-color: #fff;
+  width: 15%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+
+}
+
+.error-notification {
+  /* Styles for the error notification */
+
+
+}
+
+.Edit-Radar1{
+  position: absolute;
+  top: 115px;
+  left: 595px;
+}
+
+.Export-Radar1{
+  position:absolute;
+  top: 115px;
+  left: 622px;
+}
+
+.Edit-Radar2{
+  position: absolute;
+  top: 115px;
+  left: 595px;
+}

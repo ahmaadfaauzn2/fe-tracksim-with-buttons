@@ -73,7 +73,7 @@ const Form = (props) => {
 
 
     //// REQUEST GET CONFIG OWNPLATFORM
-
+    
     const getConfigOwnplatform = async () => {
       try{
         let response = await Axios.get('http://localhost:8080/ownplatform/config')
